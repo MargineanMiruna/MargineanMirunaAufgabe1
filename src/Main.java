@@ -9,5 +9,7 @@ public class Main {
         List<Entry> entries = app.leseTSV(System.getProperty("user.dir") + "\\src\\fallakten.tsv");
         char g = scanner.next().charAt(0);
         app.grossbuchstaben(g,entries);
+        app.fieberPatiente(entries);
+
     }
 }

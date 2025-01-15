@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -61,13 +62,25 @@ public class App {
     }
 
     public void grossbuchstaben(char g, List<Entry> entries) {
-        Set<String> studierende = entries.stream().
+        Set<String> patiente = entries.stream().
                 map(entry -> entry.getPatient()).
                 filter(studentName -> studentName.startsWith(String.valueOf(g))).
                 collect(Collectors.toSet());
 
-        for(String studentName : studierende) {
-            System.out.println(studentName);
+        for(String patient : patiente) {
+            System.out.println(patient);
+        }
+    }
+
+    public void fieberPatiente(List<Entry> entries) {
+        Set<Entry> patiente = entries.stream().
+                filter(entry -> entry.getSymptom().equals("Fieber")).
+                collect(Collectors.toSet());
+
+        Set<Entry> sortiertePatiente = patiente.stream().sorted(Comparator.comparing(Entry::getDatum)).collect(Collectors.toSet());
+
+        for(Entry entry : sortiertePatiente) {
+            System.out.println(entry.getDatum() + ": " + entry.getPatient()+ " - Diagnose: " + entry.getDiagnose());
         }
     }
 }
