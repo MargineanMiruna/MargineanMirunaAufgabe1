@@ -10,6 +10,6 @@ public class Main {
         char g = scanner.next().charAt(0);
         app.grossbuchstaben(g,entries);
         app.fieberPatiente(entries);
-
+        app.schreibeDatei(System.getProperty("user.dir") + "\\src\\fallanzahl.txt", entries);
     }
 }

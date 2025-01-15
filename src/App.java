@@ -1,12 +1,10 @@
 import java.io.BufferedReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class App {
@@ -81,6 +79,26 @@ public class App {
 
         for(Entry entry : sortiertePatiente) {
             System.out.println(entry.getDatum() + ": " + entry.getPatient()+ " - Diagnose: " + entry.getDiagnose());
+        }
+    }
+
+    public void schreibeDatei(String path, List<Entry> entries) throws IOException {
+        Path filePath = Path.of(path);
+        Map<String, Integer> krankhausFalle = new HashMap<>();
+
+        for(Entry entry : entries) {
+            krankhausFalle.put(entry.getKrankenhaus(), krankhausFalle.getOrDefault(entry.getKrankenhaus(),0) + 1);
+        }
+
+        List<Map.Entry<String, Integer>> sortiert = krankhausFalle.entrySet().
+                stream().
+                sorted((a,b) -> a.getValue() > b.getValue() ? -1 : 1).
+                collect(Collectors.toList());
+
+        try(FileWriter writer = new FileWriter(filePath.toFile())) {
+            for(Map.Entry<String, Integer> entry: sortiert) {
+                writer.write(entry.getKey() + "$" + entry.getValue() + "\n");
+            }
         }
     }
 }
