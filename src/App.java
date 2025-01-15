@@ -5,6 +5,8 @@ import java.nio.file.Path;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class App {
     public List<Entry> leseTSV(String path) throws IOException {
@@ -56,5 +58,16 @@ public class App {
             }
         }
         return entries;
+    }
+
+    public void grossbuchstaben(char g, List<Entry> entries) {
+        Set<String> studierende = entries.stream().
+                map(entry -> entry.getPatient()).
+                filter(studentName -> studentName.startsWith(String.valueOf(g))).
+                collect(Collectors.toSet());
+
+        for(String studentName : studierende) {
+            System.out.println(studentName);
+        }
     }
 }
