@@ -1,0 +1,31 @@
+Id	Patient	Symptom	Diagnose	Datum	Krankenhaus
+1	John Doe	Fieber	Lungenentzündung	2023-11-05	Princeton-Plainsboro Teaching Hospital
+2	Jane Smith	Kopfschmerzen	Migräne	2023-10-20	Princeton-Plainsboro Teaching Hospital
+3	Emily Johnson	Hautausschlag	Allergie	2023-12-01	Princeton-Plainsboro Teaching Hospital
+4	Michael Brown	Husten	Bronchitis	2023-11-15	New York General Hospital
+5	Laura Davis	Müdigkeit	Anämie	2023-10-25	New York General Hospital
+6	Robert Wilson	Schwindel	Hypotonie	2023-12-10	St. Mary’s Medical Center
+7	Sarah Miller	Bauchschmerzen	Gastritis	2023-11-18	St. Mary’s Medical Center
+8	Thomas Moore	Gelenkschmerzen	Arthritis	2023-12-03	New York General Hospital
+9	Anna Garcia	Sehstörung	Glaukom	2023-10-30	New York General Hospital
+10	Mark Robinson	Fieber	Virusinfektion	2023-11-08	St. Mary’s Medical Center
+11	Linda Perez	Schmerzen	Lumbago	2023-12-12	St. Mary’s Medical Center
+12	David Thompson	Übelkeit	Gastritis	2023-11-22	St. Mary’s Medical Center
+13	Emma White	Blutdruckschwankungen	Bluthochdruck	2023-12-15	New York General Hospital
+14	John Doe	Fieber	Grippe	2023-11-09	New York General Hospital
+15	Mary Anderson	Schwäche	Diabetes	2023-10-28	St. Mary’s Medical Center
+16	William Thomas	Atemnot	Herzinsuffizienz	2023-12-05	Princeton-Plainsboro Teaching Hospital
+17	Patricia Martinez	Hautausschlag	Dermatitis	2023-11-13	New York General Hospital
+18	Christopher Martin	Schwindel	Menière-Krankheit	2023-12-08	St. Mary’s Medical Center
+19	Barbara Clark	Sehstörung	Makuladegeneration	2023-11-01	Princeton-Plainsboro Teaching Hospital
+20	Matthew Rodriguez	Husten	Lungenkrebs	2023-12-20	New York General Hospital
+21	Jennifer Lewis	Kopfschmerzen	Migräne	2023-10-19	New York General Hospital
+22	Charles Harris	Schwäche	Anämie	2023-11-06	St. Mary’s Medical Center
+23	Alice Walker	Übelkeit	Reizmagen	2023-10-27	Princeton-Plainsboro Teaching Hospital
+24	Margaret Young	Fieber	Meningitis	2023-11-10	St. Mary’s Medical Center
+25	Joshua King	Atemnot	Asthma	2023-12-18	New York General Hospital
+26	Susan Wright	Bauchschmerzen	Appendizitis	2023-12-02	Princeton-Plainsboro Teaching Hospital
+27	Karen Scott	Blutdruckschwankungen	Bluthochdruck	2023-10-31	St. Mary’s Medical Center
+28	Thomas Adams	Husten	COPD	2023-11-25	New York General Hospital
+29	Rebecca Hill	Schwindel	Neuropathie	2023-11-29	Princeton-Plainsboro Teaching Hospital
+30	Daniel Allen	Hautausschlag	Psoriasis	2023-12-22	St. Mary’s Medical Center
